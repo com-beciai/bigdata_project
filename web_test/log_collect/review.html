@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var str="name=a1;name=afu;age=18"
+        var split = str.split(";")
+        for (key in split){
+            var kv=split[key]
+           // alert(split[key])
+            //substring 下标位置到最后
+           var idnex = kv.substring(kv.indexOf("=")+1);
+            idnex=kv.substring(0,kv.indexOf("="))
+            alert(idnex)
+//            if(idnex=="a1"){
+//                alert("a1")
+//            }else if(idnex=="afu"){
+//                alert("afu")
+//            }else if(idnex=="18"){
+//                alert("18")
+//            }
+        }
+
+//        var student = {
+//            id: 1,
+//            name: "阿富",
+//            age: 18,
+//            car: {type: "越野", color: "red"}
+//        };
+//        console.log(student["id"]);
+//        console.log(student.name);
+//        console.log(student.car["type"]);
+//        console.log(student.car.color);
+//        function demo(){
+//        alert("好嗨呦");
+//        }
+//        demo()
+//        document.cookie="username=afu"
+//        alert(document.cookie)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
